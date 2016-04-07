@@ -63,8 +63,14 @@ nav li a.active {
 
 
 
+#how_many_paragraphs, #how_many_users {
+    width: 6em;
+    height: 3em;
+}
 
-
+.errors {
+    color: #F00;
+}
 
 
 .generated_password {

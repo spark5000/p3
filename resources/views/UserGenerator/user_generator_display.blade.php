@@ -2,7 +2,7 @@
 
 
 @section('title')
-    Lorem Ipsum Main Page
+    User Generator Main Page
 @stop
 
 

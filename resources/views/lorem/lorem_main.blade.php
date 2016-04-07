@@ -15,24 +15,20 @@
 @section('content')
 
 
-
-
-
-
     <h1>Lorem Imsum Generator!</h1>
 
-    <h2>How many paragraphs do you want?</h2>
+    <h2>How many paragraphs would you like?</h2>
 
     <form method="POST" action="lorem-ipsum">
         {{ csrf_field() }}
-        Number of paragraphs: (Max: 99) <input type="text" id='how_many_paragraphs' name='how_many_paragraphs' value='{{ old('how_many_paragraphs') }}'>
+        Number of paragraphs: (Max: 99) <input type="number" min="1" max="99" id='how_many_paragraphs' name='how_many_paragraphs' value='{{ old('how_many_paragraphs') }}'>
             {{ $errors->first('how_many_paragraphs)' )}}
 
-
-        <input type="submit">
+        <br>
+        <input class = "button-submit" type="submit" value="Click to generate">
 
         <ul class='errors'>
-            @foreach($errors->all() as $error);
+            @foreach($errors->all() as $error)
                 {{ $error }} <br>
             @endforeach
         </ul>
@@ -42,6 +38,10 @@
             Please correct the erros above and try again
         @endif
 
+
+        @foreach($errors->all() as $error)
+            {{ $error }} <br>
+        @endforeach
 
     </form>
 

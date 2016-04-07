@@ -2,7 +2,7 @@
 
 
 
-Route::group(['middleware' => ['web']], function(){
+//Route::group(['middleware' => ['web']], function(){
 
 
     //Route::get('/', 'Controller@getP3IndexPage');
@@ -20,4 +20,4 @@ Route::group(['middleware' => ['web']], function(){
 
 
 
-});
+//});
