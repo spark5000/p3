@@ -2,20 +2,19 @@
 
 
 @section('title')
-    Lorem Ipsum Main Page
+    Lorem Ipsum Generator
 @stop
 
 
 
 @section('head')
-    <link href='/css/book/show.css' rel='stylesheet'>
+
 @stop
 
 
 @section('content')
 
-
-    <h1>Lorem Ipsum Generator!</h1>
+    <h1>Lorem Ipsum Generator</h1>
 
     <h2>How many paragraphs would you like?</h2>
 
@@ -33,11 +32,9 @@
             @endforeach
         </ul>
 
-
         @if (count($errors)>0)
             Please correct the erros above and try again
         @endif
-
 
         @foreach($errors->all() as $error)
             {{ $error }} <br>
@@ -51,5 +48,5 @@
 
 
 @section('body')
-    <script src="/js/book/show.js"></script>
+
 @stop

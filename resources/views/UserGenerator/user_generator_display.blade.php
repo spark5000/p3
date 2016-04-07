@@ -8,13 +8,13 @@
 
 
 @section('head')
-    <link href='/css/book/show.css' rel='stylesheet'>
+
 @stop
 
 
 @section('content')
 
-    <h1>User Generator!</h1>
+    <h1>User Generator</h1>
 
     <h2>Select options</h2>
 
@@ -45,24 +45,19 @@
 
 
 
-
-
     <?php
 
         for ($i = 0; $i < $how_many_users; $i++){
             $faker = Faker\Factory::create();
             echo $faker->name.'<br>';
 
-
             if (isset($include_address)) {
                 echo $faker->address.'<br>';
             }
 
-
             if ($include_birthday) {
                 echo $faker->dateTimeThisCentury->format('Y-m-d').'<br>';
             }
-
 
             if (isset($include_email)) {
                 echo $faker->email.'<br>';
@@ -72,36 +67,10 @@
                 echo $faker->phoneNumber.'<br>';
             }
 
-
-
-            //echo $faker->text.'<br>';
             echo '<br>';
         }
 
-
-
     ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @stop
@@ -110,5 +79,5 @@
 
 
 @section('body')
-    <script src="/js/book/show.js"></script>
+
 @stop

@@ -2,19 +2,19 @@
 
 
 @section('title')
-    Lorem Ipsum Main Page
+    Lorem Ipsum Generator
 @stop
 
 
 
 @section('head')
-    <link href='/css/book/show.css' rel='stylesheet'>
+
 @stop
 
 
 @section('content')
 
-    <h1>Lorem Imsum Generator!</h1>
+    <h1>Lorem Imsum Generator</h1>
 
     <h2>How many paragraphs would you like?</h2>
 
@@ -56,5 +56,5 @@
 
 
 @section('body')
-    <script src="/js/book/show.js"></script>
+
 @stop

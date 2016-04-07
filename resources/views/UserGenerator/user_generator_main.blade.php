@@ -8,7 +8,7 @@
 
 
 @section('head')
-    <link href='/css/book/show.css' rel='stylesheet'>
+
 @stop
 
 
@@ -43,13 +43,11 @@
 
     </form>
 
-
-
 @stop
 
 
 
 
 @section('body')
-    <script src="/js/book/show.js"></script>
+
 @stop

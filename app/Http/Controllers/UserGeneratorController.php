@@ -13,8 +13,10 @@ class UserGeneratorController extends Controller {
     }
 
     public function postUserGeneratorDisplay(Request $request) {
-        //dd($request->all());
-        //return '';
+        $this->validate($request,[
+            'how_many_users' => 'required|numeric|between:1,99'
+        ]);
+
         return view('UserGenerator.user_generator_display', [
             'how_many_users' => $request->input('how_many_users'),
             'include_birthday' => $request->input('include_birthday'),
@@ -23,11 +25,6 @@ class UserGeneratorController extends Controller {
             'include_phone_number' => $request->input('include_phone_number')
         ]);
     }
-
-
-
-
-
 
 
 

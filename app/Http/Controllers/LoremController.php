@@ -7,10 +7,6 @@ use Illuminate\Http\Request;
 
 class LoremController extends Controller {
 
-
-
-
-
     public function getLoremMainPage() {
         return view('lorem.lorem_main');
     }
@@ -23,11 +19,6 @@ class LoremController extends Controller {
 
         return view('lorem.lorem_display', ['how_many_paragraphs' => $request->input('how_many_paragraphs')]);
     }
-
-
-
-
-
 
 
 
