@@ -25,7 +25,7 @@
 
         <br>
         <label><input type="checkbox" name="include_address" checked>Addrss </label>
-        <label><input type="checkbox" name="include_birthday" checked>Birthdate </label>
+        <label><input type="checkbox" name="include_birthday" checked>Birthday </label>
         <label><input type="checkbox" name="include_email" checked>Email address </label>
         <label><input type="checkbox" name="include_phone_number" checked>Phone number </label><br>
 

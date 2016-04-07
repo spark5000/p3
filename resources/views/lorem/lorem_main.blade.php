@@ -15,7 +15,7 @@
 @section('content')
 
 
-    <h1>Lorem Imsum Generator!</h1>
+    <h1>Lorem Ipsum Generator!</h1>
 
     <h2>How many paragraphs would you like?</h2>
 
