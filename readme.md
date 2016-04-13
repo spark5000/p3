@@ -4,7 +4,7 @@
 <http://p3.sparkworld.me>
 
 ## Description
-Generates lorem ipsum placeholder text, as well as generating some sample user profiles. 
+Generates lorem ipsum placeholder text, as well as generating some sample user profiles.
 
 ## Demo
 <https://www.youtube.com/watch?v=1okdx1g2_eU>
@@ -13,4 +13,6 @@ Generates lorem ipsum placeholder text, as well as generating some sample user p
 No special instructions required.
 
 ## Outside code
-(none)
+* Laravel Framework was used as base of the project more info at <https://laravel.com/>
+* Lorem-ipsum generator was used to generate the lorem ipsum paragraphs <https://packagist.org/packages/badcow/lorem-ipsum>
+* Faker was used to generate random user profile <https://packagist.org/packages/fzaninotto/faker> 
